@@ -17,6 +17,7 @@
         <span class="logo">🌻</span>
         <span class="brand-name">Girasoles</span>
       </div>
+      <button class="menu-toggle">☰</button> <!-- nuevo -->
       <nav class="menu">
         <a href="historia.html#historia">Historia</a>
         <a href="CulturaInstitucional.html#cultura">Cultura Institucional</a>
@@ -189,6 +190,12 @@
       </div>
     </div>
   </footer>
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    btn.addEventListener('click', () => menu.classList.toggle('show'));
+  </script>
+  
 </body>
 </html>
 
