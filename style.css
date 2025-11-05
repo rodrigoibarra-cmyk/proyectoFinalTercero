@@ -164,24 +164,28 @@ body{
     border: none;
     font-size: 1.8rem;
     cursor: pointer;
+    color: #333;
   }
   
   @media (max-width: 560px){
-    .menu-toggle {display:block;}
+    .menu-toggle {
+      display: block; /* se ve el botón */
+    }
     .menu {
-      display:none;
-      flex-direction:column;
-      background:var(--bg);
-      position:absolute;
-      top:60px;
-      right:10px;
-      padding:1rem;
-      border-radius:10px;
-      box-shadow:var(--shadow);
+      display: none; /* oculto por defecto */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .menu.show {
-      display:flex;
+      display: flex; /* se muestra al hacer clic */
     }
   }
+  
   
 
